@@ -54,6 +54,15 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
+    },
+    { "name": "Auto Start Location",
+      "code": "as",
+      "type": "clickable_image",
+      "filename": "2026/half_field.png",
+      "clickRestriction": "one",
+      "dimensions": "7 10",
+      "allowableResponses": "4 11 18 25 32 39 46 53 60 67",
+      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
