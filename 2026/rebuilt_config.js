@@ -1,4 +1,3 @@
-var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2026",
@@ -222,4 +221,4 @@ var config_data = `
       "maxSize": 55
     }
   ]
-}`;
+}
