@@ -63,6 +63,10 @@ var config_data = `
       "dimensions": "7 10",
       "allowableResponses": "4 11 18 25 32 39 46 53 60 67",
       "shape": "circle 5 black red true"
+    },
+    { "name": "Pickup from Neutral Zone",
+      "code": "aff",
+      "type": "bool"
     }
   ],
   "auton": [
