@@ -1,3 +1,4 @@
+var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2026",
@@ -11,7 +12,7 @@
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Marysville",
+    { "name": "Event",
       "code": "e",
       "type": "event",
       "defaultValue": "2026ilch",
@@ -65,6 +66,15 @@
     }
   ],
   "auton": [
+    { "name": "Auto Shooting Location",
+      "code": "asl",
+      "type": "clickable_image",
+      "filename": "2026/half_field.png",
+      "dimensions": "7 10",
+      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
+      "expectedMax": 5,
+      "shape": "circle 5 black red true"
+    },
     { "name": "Fuel Scored",
       "code": "afs",
       "expectedMax": 32,
@@ -73,8 +83,11 @@
       "type": "counter"
     },
     { "name": "Pass from Neutral Zone",
-      "code": "tfd",
-      "type": "bool"
+      "code": "apn",
+      "expectedMax": 60,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
     },
     { "name": "Climb (L1)",
       "code": "ac",
@@ -100,6 +113,15 @@
     }
   ],
   "teleop": [
+    { "name": "Shooting Locations",
+      "code": "tsl",
+      "type": "clickable_image",
+      "filename": "2026/half_field.png",
+      "dimensions": "7 10",
+      "allowableResponses": "1 2 3 4 8 9 10 11 15 16 17 18 22 23 24 25 29 30 31 32 36 37 38 39 43 44 45 46 50 51 52 53 57 58 59 60 64 65 66 67",
+      "expectedMax": 25,
+      "shape": "circle 5 black red true"
+    },
     { "name": "Fuel Scored",
       "code": "tfs",
       "expectedMax": 150,
@@ -108,12 +130,18 @@
       "type": "counter"
     },
     { "name": "Pass from Neutral Zone",
-      "code": "tfd",
-      "type": "bool"
+      "code": "pnz",
+      "expectedMax": 250,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
     },
     { "name": "Pass from Opp Alliance Zone",
-      "code": "tfd",
-      "type": "bool"
+      "code": "poa",
+      "expectedMax": 250,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
     },
     { "name": "Pickup from Depot",
       "code": "tfd",
@@ -221,4 +249,4 @@
       "maxSize": 55
     }
   ]
-}
+}`;
