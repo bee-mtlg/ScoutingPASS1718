@@ -61,10 +61,6 @@ var config_data = `
       "code": "afd",
       "type": "bool"
     },
-    { "name": "Pass from Neutral Zone",
-      "code": "afn",
-      "type": "bool"
-    },
     { "name": "Pickup from Outpost",
       "code": "afo",
       "type": "bool"
