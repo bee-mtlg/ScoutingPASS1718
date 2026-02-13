@@ -39,17 +39,13 @@ var config_data = `
       "max": 99999
     }
   ],
-  "auton": [
+ "auton": [
     { "name": "Fuel Scored",
       "code": "afs",
       "expectedMax": 32,
       "altInc1": 10,
       "altInc2": 5,
       "type": "counter"
-    },
-    { "name": "Pass from Neutral Zone",
-      "code": "apn",
-      "type": "bool"
     },
     { "name": "Climb (L1)",
       "code": "ac",
@@ -63,6 +59,10 @@ var config_data = `
     },
     { "name": "Pickup from Depot",
       "code": "afd",
+      "type": "bool"
+    },
+    { "name": "Pass from Neutral Zone",
+      "code": "afn",
       "type": "bool"
     },
     { "name": "Pickup from Outpost",
