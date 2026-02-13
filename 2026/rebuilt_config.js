@@ -12,42 +12,34 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
+    { "name": "Event",
+      "code": "e",
+      "type": "event",
+      "defaultValue": "2026ilch",
+      "required": "true"
+    },
+    { "name": "Match Level",
+      "code": "l",
+      "type": "level",
+      "choices": {
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
+      },
+      "defaultValue": "qm",
+      "required": "true"
+    },
     { "name": "Match #",
       "code": "m",
       "type": "match",
-      "min": 1,
-      "max": 150,
-      "required": "true"
-    },
-    { "name": "Robot",
-      "code": "r",
-      "type": "robot",
-      "choices": {
-        "r1": "Red-1",
-        "b1": "Blue-1<br>",
-        "r2": "Red-2",
-        "b2": "Blue-2<br>",
-        "r3": "Red-3",
-        "b3": "Blue-3"
-         },
-    {,
-    { "name": "Team #",
-      "code": "t",
-      "type": "team",
-      "min": 1,
-      "max": 99999
-    }
-  ],
-  "auton": [
-    { "name": "Fuel Scored",
-      "code": "afs",
-      "expectedMax": 32,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+@@ -66,118 +49,99 @@
     },
     { "name": "Pass from Neutral Zone",
       "code": "apn",
+      "expectedMax": 60,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
       "type": "bool"
     },
     { "name": "Climb (L1)",
@@ -83,10 +75,18 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz",
+      "expectedMax": 250,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
       "type": "bool"
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
+      "expectedMax": 250,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
       "type": "bool"
     },
     { "name": "Pickup from Depot",
@@ -121,6 +121,10 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
+        "b": "Below Average<br>",
+        "a": "Average<br>",
+        "g": "Good<br>",
+        "e": "Excellent<br>",
         "b": "Played defense",
         "x": "Did not play defense"
       },
@@ -141,6 +145,13 @@ var config_data = `
     { "name": "Tippy<br>(almost tipped over)",
       "code": "tip",
       "type": "bool"
+    },
+    { "name": "Fuel Percentage",
+      "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
+      "code": "pct",
+      "type": "number",
+      "min": 0,
+      "max": 100
     }
   ]
 }`;
