@@ -12,13 +12,6 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Match #",
-      "code": "m",
-      "type": "match",
-      "min": 1,
-      "max": 150,
-      "required": "true"
-    },
     { "name": "Robot",
       "code": "r",
       "type": "robot",
