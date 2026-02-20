@@ -70,8 +70,6 @@ var config_data = `
       "altInc1": 10,
       "altInc2": 5,
       "type": "counter"
-      "code": "tfd",
-      "type": "bool"
     },
     { "name": "Climb (L1)",
       "code": "ac",
@@ -110,8 +108,6 @@ var config_data = `
       "altInc1": 10,
       "altInc2": 5,
       "type": "counter"
-      "code": "tfd",
-      "type": "bool"
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
@@ -119,8 +115,6 @@ var config_data = `
       "altInc1": 10,
       "altInc2": 5,
       "type": "counter"
-      "code": "tfd",
-      "type": "bool"
     },
     { "name": "Pickup from Depot",
       "code": "tfd",
