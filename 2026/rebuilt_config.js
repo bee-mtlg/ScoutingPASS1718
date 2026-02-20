@@ -52,7 +52,7 @@ var config_data = `
       "expectedMax": 60,
       "altInc1": 10,
       "altInc2": 5,
-      "type": "counter"
+      "type": "counter",
       "code": "tfd",
       "type": "bool"
     },
@@ -92,7 +92,7 @@ var config_data = `
       "expectedMax": 250,
       "altInc1": 10,
       "altInc2": 5,
-      "type": "counter"
+      "type": "counter",
       "code": "tfd",
       "type": "bool"
     },
@@ -101,7 +101,7 @@ var config_data = `
       "expectedMax": 250,
       "altInc1": 10,
       "altInc2": 5,
-      "type": "counter"
+      "type": "counter",
       "code": "tfd",
       "type": "bool"
     },
