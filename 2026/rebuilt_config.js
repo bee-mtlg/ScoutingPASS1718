@@ -25,6 +25,12 @@ var config_data = `
       },
       "required": "true"
     },
+    { "name": "Match #",
+      "code": "m",
+      "type": "match",
+      "min": 1,
+      "max": 999
+      },
     { "name": "Team #",
       "code": "t",
       "type": "team",
@@ -42,11 +48,6 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "apn",
-      "expectedMax": 60,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter",
-      "code": "tfd",
       "type": "bool"
     },
     { "name": "Climb (L1)",
@@ -82,20 +83,10 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter",
-      "code": "tfd",
       "type": "bool"
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter",
-      "code": "tfd",
       "type": "bool"
     },
     { "name": "Pickup from Depot",
@@ -130,10 +121,7 @@ var config_data = `
       "code": "dr",
       "type": "radio",
       "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
+        "b": "Played<br>",
         "x": "Did not play defense"
       },
       "defaultValue": "x"
