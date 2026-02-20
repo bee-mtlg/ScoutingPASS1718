@@ -39,39 +39,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Fuel Scored",
-      "code": "afs",
-      "expectedMax": 32,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
-    },
-    { "name": "Pass from Neutral Zone",
-      "code": "apn",
-      "type": "bool"
-    },
-    { "name": "Climb (L1)",
-      "code": "ac",
-      "type": "radio",
-      "choices": {
-        "c": "Climbed<br>",
-        "a": "Attempted<br>",
-        "x": "Not Attempted"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Pickup from Depot",
-      "code": "afd",
-      "type": "bool"
-    },
-    { "name": "Pickup from Outpost",
-      "code": "afo",
-      "type": "bool"
-    },
-    { "name": "Pickup from Neutral Zone",
-      "code": "aff",
-      "type": "bool"
-    }
+    
   ],
   "teleop": [
     { "name": "Fuel Scored",
