@@ -47,10 +47,6 @@ var config_data = `
       "altInc2": 5,
       "type": "counter"
     },
-    { "name": "Pass from Neutral Zone",
-      "code": "apn",
-      "type": "bool"
-    },
     { "name": "Climb (L1)",
       "code": "ac",
       "type": "radio",
