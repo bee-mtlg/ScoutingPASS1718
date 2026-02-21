@@ -10,31 +10,14 @@ var config_data = `
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
-      "required": "true"
-    },
-    { "name": "Diee",
-      "code": "e",
-      "type": "die",
-      "defaultValue": "ts dumb",
-      "required": "true"
-    },
-    { "name": "Match Level",
-      "code": "l",
-      "type": "level",
-      "choices": {
-        "qm": "Quals<br>",
-        "sf": "Semifinals<br>",
-        "f": "Finals"
-      },
-      "defaultValue": "qm",
-      "required": "true"
+      "required": "false"
     },
     { "name": "Match #",
       "code": "m",
       "type": "match",
       "min": 1,
       "max": 150,
-      "required": "true"
+      "required": "false"
     },
     { "name": "Robot",
       "code": "r",
@@ -47,7 +30,7 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required": "true"
+      "required": "false"
     },
     { "name": "Team #",
       "code": "t",
@@ -66,10 +49,7 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "apn",
-      "expectedMax": 60,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Climb (L1)",
       "code": "ac",
@@ -100,17 +80,11 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Pickup from Depot",
       "code": "tfd",
@@ -140,17 +114,6 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
     { "name": "Defense Rating",
       "code": "dr",
       "type": "radio",
@@ -162,18 +125,6 @@ var config_data = `
         "x": "Did not play defense"
       },
       "defaultValue": "x"
-    },
-    { "name": "Speed Rating",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
     },
     { "name": "Crossed Bump",
       "code": "bmp",
@@ -191,31 +142,12 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "type": "bool"
-    },
-    { "name": "Was Defended",
-      "code": "def",
-      "type": "bool"
-    },
-    { "name": "Excessive Penalties",
-      "code": "pen",
-      "type": "bool"
-    },
     { "name": "Fuel Percentage",
       "tooltip": "What percentage of the total fuel for this alliance did this robot score?",
       "code": "pct",
       "type": "number",
       "min": 0,
       "max": 100
-    },
-    { "name": "Comments",
-      "code": "co",
-      "type": "text",
-      "size": 15,
-      "maxSize": 55
     }
   ]
 }`;
