@@ -49,10 +49,7 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "apn",
-      "expectedMax": 60,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Climb (L1)",
       "code": "ac",
