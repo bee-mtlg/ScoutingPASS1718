@@ -9,15 +9,13 @@ var config_data = `
       "code": "s",
       "type": "scouter",
       "size": 5,
-      "maxSize": 5,
-      "required": "true"
+      "maxSize": 5
     },
     { "name": "Match #",
       "code": "m",
       "type": "match",
       "min": 1,
-      "max": 150,
-      "required": "true"
+      "max": 150
     },
     { "name": "Robot",
       "code": "r",
@@ -30,7 +28,6 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
-      "required": "true"
     },
     { "name": "Team #",
       "code": "t",
