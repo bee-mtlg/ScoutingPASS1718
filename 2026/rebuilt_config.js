@@ -9,13 +9,32 @@ var config_data = `
       "code": "s",
       "type": "scouter",
       "size": 5,
-      "maxSize": 5
+      "maxSize": 5,
+      "required": "true"
+    },
+    { "name": "Event",
+      "code": "e",
+      "type": "event",
+      "defaultValue": "2026ilch",
+      "required": "true"
+    },
+    { "name": "Match Level",
+      "code": "l",
+      "type": "level",
+      "choices": {
+        "qm": "Quals<br>",
+        "sf": "Semifinals<br>",
+        "f": "Finals"
+      },
+      "defaultValue": "qm",
+      "required": "true"
     },
     { "name": "Match #",
       "code": "m",
       "type": "match",
       "min": 1,
-      "max": 150
+      "max": 150,
+      "required": "true"
     },
     { "name": "Robot",
       "code": "r",
@@ -28,6 +47,7 @@ var config_data = `
         "r3": "Red-3",
         "b3": "Blue-3"
       },
+      "required": "true"
     },
     { "name": "Team #",
       "code": "t",
@@ -46,7 +66,10 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "apn",
-      "type": "bool"
+      "expectedMax": 60,
+      "altInc1": 10,
+      "altInc2": 5,
+      "type": "counter"
     },
     { "name": "Climb (L1)",
       "code": "ac",
