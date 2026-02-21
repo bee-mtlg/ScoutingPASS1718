@@ -100,17 +100,11 @@ var config_data = `
     },
     { "name": "Pass from Neutral Zone",
       "code": "pnz",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Pass from Opp Alliance Zone",
       "code": "poa",
-      "expectedMax": 250,
-      "altInc1": 10,
-      "altInc2": 5,
-      "type": "counter"
+      "type": "bool"
     },
     { "name": "Pickup from Depot",
       "code": "tfd",
