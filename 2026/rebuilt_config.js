@@ -12,7 +12,7 @@ var config_data = `
       "maxSize": 5,
       "required": "true"
     },
-    { "name": "Die",
+    { "name": "Diee",
       "code": "e",
       "type": "die",
       "defaultValue": "ts dumb",
